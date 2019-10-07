@@ -1,6 +1,22 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'Museo Sans Cyrillic Bold';
+  src: url("../fonts/MuseoSansCyrillic/MuseoSansCyrillic-700.eot");
+  src: local("../fonts/MuseoSansCyrillic/Museo Sans Cyrillic 700"), local("../fonts/MuseoSansCyrillic/MuseoSansCyrillic-700"), url("../fonts/MuseoSansCyrillic/MuseoSansCyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrillic/MuseoSansCyrillic-700.woff") format("woff"), url("../fonts/MuseoSansCyrillic/MuseoSansCyrillic-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrillic Light';
+  src: url("../fonts/MuseoSansCyrillic/MuseoSansCyrillic-300.eot");
+  src: local("../fonts/MuseoSansCyrillic/Museo Sans Cyrillic 300"), local("../fonts/MuseoSansCyrillic/MuseoSansCyrillic-300"), url("../fonts/MuseoSansCyrillic/MuseoSansCyrillic-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrillic/MuseoSansCyrillic-300.woff") format("woff"), url("../fonts/MuseoSansCyrillic/MuseoSansCyrillic-300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: sans-serif;
+  font-family: Museo Sans Cyrillic Light, sans-serif;
 }
 
 img {
@@ -66,21 +82,23 @@ img {
   margin: 0;
   padding: 0;
   font-size: 13px;
-  font-weight: 400;
   margin-left: 50px;
 }
 
 .navbar__button {
   margin-left: 30px;
+  font-family: Museo Sans Cyrillic Bold, sans-serif;
+  font-weight: 700;
 }
 
 .navbar__phone {
   display: inline-block;
   color: #333333;
   font-size: 20px;
-  font-weight: 400;
   text-decoration: none;
   margin-top: 10px;
+  font-family: Museo Sans Cyrillic Bold, sans-serif;
+  font-weight: 700;
 }
 
 @media (max-width: 768px) {
@@ -121,7 +139,6 @@ img {
 
 .header__title {
   font-size: 40px;
-  font-weight: 400;
   line-height: 55px;
 }
 
@@ -132,8 +149,9 @@ img {
 
 .header__subtitle-text {
   font-size: 20px;
-  font-weight: 400;
   margin-top: 40px;
+  font-family: Museo Sans Cyrillic Bold, sans-serif;
+  font-weight: 700;
 }
 
 .header__list {
@@ -172,7 +190,6 @@ img {
   border-radius: 50%;
   align-items: center;
   font-size: 14px;
-  font-weight: 400;
 }
 
 .header__list-text {
@@ -213,6 +230,8 @@ img {
   .header__subtitle-text {
     font-size: 16px;
     margin-bottom: 28px;
+    font-family: Museo Sans Cyrillic Bold, sans-serif;
+    font-weight: 700;
   }
   .header__list {
     font-size: 12px;

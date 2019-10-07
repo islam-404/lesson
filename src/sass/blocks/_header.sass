@@ -1,7 +1,6 @@
 .header-block
  background: $header-color
 
-
 .header
  color: $text-color
  display: flex
@@ -14,15 +13,15 @@
   padding-right: 120px
  &__title
   font-size: 40px
-  font-weight: 400
   line-height: 55px
+
   &-text
    padding: 0
    margin: 0
  &__subtitle-text
   font-size: 20px
-  font-weight: 400
   margin-top: 40px
+  +bold
  &__list
   list-style: none
   margin: 0
@@ -43,7 +42,6 @@
    border-radius: 50%
    align-items: center
    font-size: 14px
-   font-weight: 400
 
   &-text
    display: inline-block
@@ -72,6 +70,7 @@
   &__subtitle-text
    font-size: 16px
    margin-bottom: 28px
+   +bold
   &__list
    font-size: 12px
    margin-top: 28px
