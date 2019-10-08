@@ -196,12 +196,10 @@ img {
   .header__text {
     -ms-flex-preferred-size: 85%;
         flex-basis: 85%;
+    padding-right: 10px;
   }
   .header-list {
     margin-bottom: 44px;
-  }
-  .header__text {
-    padding-right: 10px;
   }
 }
 
@@ -239,7 +237,7 @@ img {
     line-height: 1.4;
     margin-bottom: 13px;
   }
-  .header__subtitle-tex {
+  .header__subtitle-text {
     font-size: 16px;
     margin-bottom: 28px;
     font-family: 'Museo Sans Cyrillic Bold', sans-serif;
