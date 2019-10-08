@@ -15,45 +15,6 @@
   font-style: normal;
 }
 
-body {
-  font-family: Museo Sans Cyrillic Light, sans-serif;
-}
-
-img {
-  max-width: 100%;
-}
-
-.container {
-  width: 1170px;
-  margin: auto;
-}
-
-@media (max-width: 1200px) {
-  .container {
-    width: 992px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .container {
-    width: 768px;
-  }
-}
-
-@media (max-width: 820px) {
-  .container {
-    max-width: 580px;
-    width: 90%;
-  }
-}
-
-.button {
-  border-radius: 10px;
-  background-color: #ffd200;
-  border: none;
-  padding: 17px 30px 18px 30px;
-}
-
 /* Импорт стилей шапки */
 .navbar {
   padding: 8px 0;
@@ -96,7 +57,7 @@ img {
   margin-left: 30px;
   font-size: 13px;
   letter-spacing: -0.1px;
-  font-family: Museo Sans Cyrillic Bold, sans-serif;
+  font-family: 'Museo Sans Cyrillic Bold', sans-serif;
   font-weight: 700;
 }
 
@@ -106,21 +67,8 @@ img {
   font-size: 20px;
   text-decoration: none;
   margin-top: 7px;
-  font-family: Museo Sans Cyrillic Bold, sans-serif;
+  font-family: 'Museo Sans Cyrillic Bold', sans-serif;
   font-weight: 700;
-}
-
-@media (max-width: 768px) {
-  .navbar__contacts {
-    display: none;
-  }
-  .navbar__button {
-    font-size: 12px;
-    padding: 15px 26px;
-  }
-  .navbar__logo {
-    width: 90px;
-  }
 }
 
 /* Импорт стилей заголовка */
@@ -162,7 +110,7 @@ img {
   font-size: 20px;
   margin-top: 38px;
   letter-spacing: 0.003em;
-  font-family: Museo Sans Cyrillic Bold, sans-serif;
+  font-family: 'Museo Sans Cyrillic Bold', sans-serif;
   font-weight: 700;
 }
 
@@ -221,12 +169,67 @@ img {
   margin-bottom: 1px;
 }
 
+body {
+  font-family: 'Museo Sans Cyrillic Light', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 1170px;
+  margin: auto;
+}
+
+.button {
+  border-radius: 10px;
+  background-color: #ffd200;
+  border: none;
+  padding: 17px 30px 18px 30px;
+}
+
 @media (max-width: 1200px) {
+  .container {
+    width: 1024px;
+  }
+  .header__text {
+    -ms-flex-preferred-size: 85%;
+        flex-basis: 85%;
+  }
   .header-list {
     margin-bottom: 44px;
   }
   .header__text {
     padding-right: 10px;
+  }
+}
+
+@media (max-width: 1060px) {
+  .container {
+    width: 992px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 820px) {
+  .container {
+    max-width: 580px;
+    width: 90%;
   }
 }
 
@@ -236,10 +239,10 @@ img {
     line-height: 1.4;
     margin-bottom: 13px;
   }
-  .header__subtitle-text {
+  .header__subtitle-tex {
     font-size: 16px;
     margin-bottom: 28px;
-    font-family: Museo Sans Cyrillic Bold, sans-serif;
+    font-family: 'Museo Sans Cyrillic Bold', sans-serif;
     font-weight: 700;
   }
   .header-list {
@@ -248,6 +251,16 @@ img {
   }
   .header-list__item {
     margin-bottom: 20px;
+  }
+  .navbar__contacts {
+    display: none;
+  }
+  .navbar__button {
+    font-size: 12px;
+    padding: 15px 26px;
+  }
+  .navbar__logo {
+    width: 90px;
   }
 }
 /*# sourceMappingURL=style.css.map */
