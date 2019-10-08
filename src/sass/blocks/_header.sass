@@ -25,18 +25,18 @@
   margin-top: 38px
   letter-spacing: 0.003em
   +bold
- &__list
+ &-list
   list-style: none
   margin: 0
   padding: 0
   align-items: center
   margin-top: 69px
   letter-spacing: -0.07em
-  &-item
+  &__item
    display: flex
    align-items: center
    margin-bottom: 28px
-  &-icon
+  &__icon
    width: 36px
    height: 37px
    display: flex
@@ -47,7 +47,7 @@
    align-items: center
    font-size: 14px
 
-  &-text
+  &__text
    display: inline-block
    margin: 0
    padding: 0
@@ -61,8 +61,7 @@
 
 @media ( max-width: 1200px )
  .header
-  flex-direction: column
-  &__list
+  &-list
    margin-bottom: 44px
   &__text
    padding-right: 10px
@@ -77,8 +76,8 @@
    font-size: 16px
    margin-bottom: 28px
    +bold
-  &__list
+  &-list
    font-size: 12px
    margin-top: 28px
-   &-item
+   &__item
     margin-bottom: 20px
