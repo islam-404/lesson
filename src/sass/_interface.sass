@@ -1,3 +1,6 @@
+*
+ box-sizing: border-box
+
 body
  font-family: 'Museo Sans Cyrillic Light', sans-serif
 img
@@ -11,3 +14,26 @@ img
  background-color: $main-color
  border: none
  padding: 17px 30px 18px 30px
+ &:hover
+  background-color: lighten($main-color, 10%)
+  cursor: pointer
+.section
+ padding: 55px 0
+ &-title
+  font-size: 24px
+  +bold
+ &-subtitle
+  display: block
+  font-size: 16px
+ &-subtex
+  font-size: 15px
+  line-height: 24px
+ &-phone
+  text-decoration: none
+  color: $text-color
+  +bold
+.input
+ border: 1px solid $border-input
+ padding: 21px 26px 26px 26px
+ font-size: 15px
+ border-radius: 10px

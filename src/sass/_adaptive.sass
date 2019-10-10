@@ -64,6 +64,46 @@
    border-radius: 5px
    letter-spacing: 0em
    margin-left: -60px
-
   &__logo
    width: 91px
+
+
+/*Адаптив для блока offer */
+@media ( max-width: 1200px )
+ .offer
+  background-size: cover
+  &__input
+   width: 100%
+   margin-bottom: 7px
+  &__button
+   font-size: 13px
+  &__subtex
+   flex-direction: column
+
+@media ( max-width: 768px )
+ .offer
+  background: #fff
+  &-block
+   width: 100%
+   padding-right: 0
+  &__title
+    line-height: 21px
+    font-size: 18px
+  &__subtitle
+   font-size: 14px
+   margin-bottom: 27px
+  &__button
+   font-size: 15px
+  &__input
+   &:last-child
+    margin-bottom: 9px
+  &__subtex
+   flex-direction: inherit
+  &__text
+   margin-top: 7px
+@media ( max-width: 600px )
+ .offer
+  &__subtex
+   margin-top: 15px
+   margin-left: 5px
+   flex-direction: column
