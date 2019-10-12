@@ -25,7 +25,8 @@
                         </a>
                     </div>
                     <!-- /.nav__contacts -->
-                    <a href="tel:+7 (495) 42-251-31"><button href="t:+7 (495) 42-251-31" class="button navbar__button"> Перезвоните мне</button></a>
+                    <a href="tel:+7 (495) 42-251-31"><button class="button navbar__button" id="button"> Перезвоните
+                            мне</button></a>
                 </div>
                 <!-- /.navbar_info -->
             </div>
@@ -86,10 +87,12 @@
                 </form>
                 <!-- /.form offer__form -->
                 <div class="section-subtex offer__subtex">
-                    <span class="offer__text">Наш менеджер перезвонит Вам 
+                    <span class="offer__text">Наш менеджер перезвонит Вам
                         в течение 60 секунд</span>
-                    <span class="offer__text"><p class="offer__text-text">или перезвоните нам сами</p>
-                        <a href="tel:+7 (495) 42-251-31" class=" section-phone offer__phone">+7 (495) 42-251-31</a></span>
+                    <span class="offer__text">
+                        <p class="offer__text-text">или перезвоните нам сами</p>
+                        <a href="tel:+7 (495) 42-251-31" class=" section-phone offer__phone">+7 (495) 42-251-31</a>
+                    </span>
                 </div>
                 <!-- /.section-subtex offer-subtex -->
             </div>
@@ -98,6 +101,28 @@
         <!-- /.container -->
     </section>
     <!-- /.offer -->
+
+    <div class="modal" id="modal">
+        <div class="modal__block">
+            <div class="modal-dialog">
+                <button class="modal-dialog__close" id="close">&times;</button>
+                <h4 class="modal-dialog__title">Узнайте точную стоимость ремонта по телефону!</h4>
+                <p class="modal-dialog__subtitle">Заполните поля ниже - мы свяжемся с Вами</p>
+                <form action="#" class="form modal__form">
+                    <div>
+                        <input type="text" class="input  modal__input" placeholder="Ваше имя">
+                        <input type="tel" class="input  modal__input" placeholder="Ваш телефон"></div>
+                    <button class="modal-button  modal__button">Узнать стоимость</button>
+                </form>
+                <p class="modal-subtex modal__subtex">Или Вы можете перезвонить нам сами по телефону:</p>
+                <a href="tel:+7 (8182) 42-51-31" class="modal-phone modal__phone" >+7 (8182) 42-51-31</a>
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+    </div>
+    <!-- /.modal -->
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
