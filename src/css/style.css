@@ -232,7 +232,7 @@ img {
 
 .input {
   border: 1px solid #dddddd;
-  padding: 21px 26px 26px 26px;
+  padding: 22px 26px 26px 21px;
   font-size: 15px;
   border-radius: 10px;
 }
@@ -465,6 +465,12 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media (max-width: 360px) {
+  .offer__title {
+    max-width: 273px;
   }
 }
 /*# sourceMappingURL=style.css.map */
