@@ -351,10 +351,13 @@ img {
 }
 
 .modal-dialog__close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: none;
+  position: relative;
+  top: 1px;
+  right: -99px;
+  margin-left: auto;
+  border: none;
+  border-radius: 50%;
+  background-color: #ffd200;
 }
 
 .modal-dialog__title {
