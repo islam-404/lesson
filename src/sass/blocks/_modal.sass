@@ -8,6 +8,7 @@
  height: 100%
  &__block
   width: 570px
+  height: 674px
   margin: auto
   background-color: #ffffff
  &_active
@@ -15,17 +16,21 @@
  &-dialog
   position: relative 
   width: 370px
+  height: 518px
+  display: flex
+  flex-direction: column
   margin: auto
   &__close
    position: absolute
    top: 0
    right: 0
+   display: none
   &__title
    width: 370px
    font-size: 22px
    line-height: 33px
    +bold
-   margin-bottom: 45px
+   margin-bottom: 30px
   &__subtitle
    font-size: 16px
    margin-bottom: 48px
@@ -35,6 +40,34 @@
   &:first-child
    margin-bottom: 15px
   &:last-child
-   margin-bottom: 30px
+   margin-bottom: 28px
  &__button
   width: 370px
+ &__form
+  margin-left: -4px
+ text-align: center
+ &-subtex
+  font-size: 15px
+  max-width: 289px
+  display: flex
+  margin-top: 29px
+  margin-left: 35px
+  line-height: 1.4
+  margin-bottom: 6px
+ &__phone
+  font-size: 24px
+  +bold
+  text-decoration: none
+  color: #000000
+  margin-left: -11px
+ &-button
+  border-radius: 10px
+  background-color: $main-color
+  border: none
+  +bold
+  padding: 28px 30px 25px 30px
+ &__input
+  padding-left: 23px
+  &:hover
+   background-color: lighten($main-color, 10%)
+   cursor: pointer
