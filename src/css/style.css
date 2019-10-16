@@ -248,6 +248,36 @@ img {
   margin: auto;
 }
 
+.error {
+  color: red;
+  text-align: left;
+  display: inline-block;
+}
+
+#email-error {
+  border: 0;
+  font-size: 12px;
+  position: relative;
+  top: -82px;
+  right: 26%;
+}
+
+#username-error {
+  border: 0;
+  font-size: 12px;
+  position: relative;
+  top: -82px;
+  right: 26%;
+}
+
+#phone-error {
+  border: 0;
+  font-size: 12px;
+  position: relative;
+  top: -82px;
+  right: 26%;
+}
+
 .offer {
   background: url("../img/offer-img.png") no-repeat;
   background-position: center right;
@@ -588,7 +618,7 @@ img {
 .brif {
   background-image: url("../img/brif/brif-color-bg.png"), url("../img/brif/brif-bg.jpg");
   background-position: left center, center right;
-  background-size: 50%, contain;
+  background-size: 50%, cover;
   background-repeat: repeat-y, no-repeat;
   padding-top: 77px;
 }
@@ -616,6 +646,8 @@ img {
 .brif__input {
   width: 100%;
   max-width: 370px;
+  margin: auto;
+  display: block;
   margin-bottom: 15px;
   padding-left: 24px;
 }
@@ -623,7 +655,6 @@ img {
 .brif__button {
   height: 70px;
   width: 100%;
-  margin-top: 15px;
   max-width: 370px;
   margin-top: 15px;
   margin-bottom: 30px;
@@ -1005,12 +1036,19 @@ img {
   }
 }
 
+@media (max-width: 600px) {
+  .brif {
+    padding-top: 0px;
+  }
+}
+
 @media (max-width: 576px) {
   .brif {
-    background-size: 100% 49%, cover;
+    background-size: 100% 46%, cover;
   }
   .interview {
     padding-right: 0;
+    margin-top: 15px;
   }
   .interview__title {
     padding-right: 30px;
@@ -1024,7 +1062,7 @@ img {
     padding-right: 86px;
     margin-left: 1px;
     font-size: 14px;
-    margin-bottom: 39px;
+    margin-bottom: 38px;
     letter-spacing: 0.02px;
   }
   .interview-list {
@@ -1082,8 +1120,8 @@ img {
     margin-left: 0;
   }
   .brif__form {
-    padding: 0;
-    margin-top: 55px;
+    padding: 0 0 0 0;
+    margin-top: 68px;
   }
   .brif__input {
     margin-bottom: 12px;
@@ -1100,6 +1138,51 @@ img {
     margin: auto;
     margin-left: 67px;
     line-height: 24px;
+  }
+  .brif {
+    background-size: 100% 44.8%, cover;
+  }
+}
+
+@media (max-width: 1200px) {
+  .brif__button {
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+  #email-error {
+    border: 0;
+    font-size: 12px;
+    position: relative;
+    top: -82px;
+    right: 20%;
+  }
+  #username-error {
+    border: 0;
+    font-size: 12px;
+    position: relative;
+    top: -82px;
+    right: 20%;
+  }
+  #phone-error {
+    border: 0;
+    font-size: 12px;
+    position: relative;
+    top: -82px;
+    right: 20%;
+  }
+}
+
+@media (max-width: 578px) {
+  #email-error {
+    top: -72px;
+  }
+  #username-error {
+    top: -72px;
+  }
+  #phone-error {
+    top: -72px;
   }
 }
 /*# sourceMappingURL=style.css.map */

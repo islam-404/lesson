@@ -205,11 +205,18 @@
    flex-direction: column
   &__form
    margin-top: 80px
+
+@media (max-width: 600px)
+ .brif
+  padding-top: 0px
+
+
 @media (max-width: 576px)
  .brif
-  background-size: 100% 49%, cover
+  background-size: 100% 46%, cover
  .interview
   padding-right: 0
+  margin-top: 15px
   &__title
    padding-right: 30px
    font-size: 18px
@@ -221,7 +228,7 @@
    padding-right: 86px
    margin-left: 1px
    font-size: 14px
-   margin-bottom: 39px
+   margin-bottom: 38px
    letter-spacing: 0.02px
   &-list
    font-size: 14px
@@ -269,8 +276,9 @@
   &-block
    margin-left: 0
   &__form
-   padding: 0
-   margin-top: 55px
+   padding: 0 0 0 0
+   margin-top: 68px
+
   &__input
    margin-bottom: 12px
    padding: 21px
@@ -283,3 +291,45 @@
   margin: auto
   margin-left: 67px
   line-height: 24px
+ .brif
+  background-size: 100% 44.8%, cover
+
+
+
+
+
+
+@media ( max-width: 1200px )
+ .brif__button
+  display: block
+  margin: auto
+  margin-top: 15px
+  margin-bottom: 30px
+ #email-error
+  border: 0
+  font-size: 12px
+  position: relative
+  top: -82px
+  right: 20%
+
+ #username-error
+  border: 0
+  font-size: 12px
+  position: relative
+  top: -82px
+  right: 20%
+
+ #phone-error
+  border: 0
+  font-size: 12px
+  position: relative
+  top: -82px
+  right: 20%
+
+@media ( max-width: 578px )
+ #email-error
+  top: -72px
+ #username-error
+  top: -72px
+ #phone-error
+  top: -72px
